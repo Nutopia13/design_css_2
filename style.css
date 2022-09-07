@@ -8,3 +8,57 @@
 :root{
     font-size: 16px;
 }
+
+@media only screen and (min-width: 1200px) {
+.cart_box{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "aa bb cc dd"
+        "aa ee ee ff"
+    ;
+    grid-template-columns: 354px 164px 164px 354px;
+    grid-template-rows: 182px;
+    gap: 24px;
+    justify-content: center;
+}
+.cart1{
+    grid-area: aa;
+    width: 354px;
+    height: 364px;
+    background-color: #755CDE;
+    border-radius: 12px;
+    font-size: 24px;
+    color: white;
+}
+
+.cart2{
+    grid-area: bb;
+    background-color: #F6A560;
+}
+
+.cart3 {
+    grid-area: cc;
+    background-color: #F39E9E;
+}
+
+.cart5{
+
+    height: 158px;
+    grid-area: dd;
+    background-color: #61C4B7;
+}
+
+
+.cart4 {
+    height: 158px;
+    grid-area: ee;
+    background-color: #EB7565;
+}
+
+.cart6 {
+    height: 158px;
+    grid-area: ff;
+    background-color: #552049;
+}
+}
